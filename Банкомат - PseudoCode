@@ -1,0 +1,29 @@
+output "Insert your card"
+input A
+if A==0 then
+    output "The card is inserted not right"
+else if A==1 then
+    output "Enter your PIN-code"
+    input PIN
+    loop while PIN==0
+        output "PIN is incorrect"
+        output "Enter PIN-code"
+        input PIN
+    end loop
+        if PIN==1 then
+        output "Enter the sum you want to cash in"
+        input SUM
+        ACCOUNT = 10000
+        loop while SUM>10000
+            output "NOT enough money on the account"
+            output "10000 on the account"
+            output "Enter the sum you want to cash in"
+            input SUM
+        end loop
+        if SUM<=10000 then
+            ACCOUNT = ACCOUNT - SUM
+            output "Take the check"
+            output "The balance: " + ACCOUNT
+        end if
+    end if
+end if

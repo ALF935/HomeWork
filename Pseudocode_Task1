@@ -1,0 +1,19 @@
+input A
+input B
+input C
+if B < A then
+    MID = B
+    B = A
+    A = MID
+end if
+if C < B then 
+    NUM = B
+    B = C
+    C = NUM
+end if
+if B < A then
+    MID = B
+    B = A
+    A = MID  
+end if
+output A, B, C

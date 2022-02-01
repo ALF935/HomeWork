@@ -1,0 +1,7 @@
+SUM = 0
+input N
+loop while N >= 0
+    SUM = SUM + N
+    input N
+end loop
+output SUM
