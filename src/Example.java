@@ -1,18 +1,14 @@
 import java.util.Scanner;
 public class Example {
     public static void main(String[] args) {
-        while (true){
-            int randit1 = 2+(int)(Math.random()*(15-2+1));
-            int randit2 = 2+(int)(Math.random()*(15-2+1));
-            int sum = randit1 + randit2;
-            System.out.println("Find " + randit1 + "+" + randit2);
-            Scanner sum2 = new Scanner(System.in);
-            String sum3 = sum2.next();
-            int sum4 = Integer.valueOf(sum3);
-            if (sum == sum4)
-                break;
+        int b;
+        b = 1;
+        Scanner scanner = new Scanner(System.in);
+        String str = scanner.nextLine();
+        for (int i = 1; i < Integer.parseInt(str); i++){
+            b = b * i;
         }
-        System.out.println("Congratulations!");
+        System.out.println(b);
     }
 }
 
