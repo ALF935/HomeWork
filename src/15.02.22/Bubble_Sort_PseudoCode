@@ -1,6 +1,6 @@
 NUMBERS = [10,29,34,12,56,72,98,1,22,45,0]
 
-output "Before sorting"
+output "Before sorting:"
 loop N from 0 to 10
    output NUMBERS[N]
 end loop
